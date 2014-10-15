@@ -1,7 +1,7 @@
 library(data.table)
 
 init <- function() {
-
+  
   # Define Variables
   dataFolder <- "UCI HAR Dataset"
   
@@ -46,7 +46,7 @@ init <- function() {
   #    1) Merges the training and the test sets to create one data set.
   #        We ignore the raw inertia signals files and instead use the prebuilt
   #        data sets in the files X_train.txt and X_test.txt.
-  #    TODO:  Should I do step 2 here? Probably not, since I ignores the inertia signals files
+  #    2) Extracts only the measurements on the mean and standard deviation for each measurement. 
   #    3) Uses descriptive activity names to name the activities in the data set
   #        The activity names come from the file activity_labels.txt.
   #    4) Appropriately labels the data set with descriptive variable names. 
@@ -81,63 +81,37 @@ init <- function() {
       lapply(read.csv(featuresFile, header = FALSE, sep = " ")[,2], as.character)
     }  
     
+    # TODO:  this function name sucks
     buildSetData <- function() {
       
       trainXFile <- concat(c(dataFolder, "/train/X_train.txt"))
       testXFile <- concat(c(dataFolder, "/test/X_test.txt"))
       trainingSet <- read.table(trainXFile, header = FALSE) # (7552 observances of 561 variables)
       testingSet <- read.table(testXFile, header = FALSE) #  (2947 observances of 561 variables)      
-      data.table(rbind(trainingSet, testingSet))
+      rbind(trainingSet, testingSet)
     }
                 
     features <- buildFeatures()
-    masterSet <- buildSetData()
-    setnames(masterSet, names(masterSet), unlist(features))
+    fullSet <<- buildSetData()
+    setnames(fullSet, names(fullSet), unlist(features))
+    tdNames <- names(fullSet)
+    
+    masterSet <- fullSet[,c(grep("mean\\(\\)", tdNames), grep("std\\(\\)", tdNames))]
+    tempDebug <<- masterSet
+    
     masterLabels <- buildActivityLabels()
     subjects <- buildSubjects()
+    
     cbind(masterLabels, subjects, masterSet)
   }
-  
-  buildMainDataSet <- function() {
-    trainFolder <- concat(c(dataFolder, "/train/Inertial Signals"))
-    testFolder <- concat(c(dataFolder, "/test/Inertial Signals"))
-    
-    trainFiles <- dir(trainFolder)
-    testFiles <- dir(testFolder)
-    
-    result <<- data.frame(measurement=character(),
-                             feature=character(),
-                             mean=numeric(), 
-                             stddev=numeric(), 
-                             stringsAsFactors=FALSE)
-    
-    testSubjects <- buildSubjectsForFile("/test/subject_test.txt")
-    trainSubjects <- buildSubjectsForFile("/train/subject_train.txt")
-    
-    for (file in testFiles) {
-      measurement <- substr(file, 1, nchar(file) - 9)
-      filePath <- concat(c(dataFolder, "/test/Inertial Signals/", file))
-      message(filePath)
-      data <- read.table(filePath, header = FALSE)
-      message(dim(data)) # all are 2947 obs of 128 vars
-      meanData <- apply(data, 1, mean)
-      stddevData <- apply(data, 1, sd)
-      a <- cbind(data.frame(rep(measurement, length(mean))), testSubjects, meanData, stddevData)
-      names(a) <- c("measurement", "subjectId", "mean", "stddev")
-      ## todo: this should be very slow
-      result <<- rbind(result, a)
-    }    
-  }
-  
+      
   #########################
   ### main program flow ###
   #########################
   
   downloadDataIfNecessary()
-  # master <<- buildMasterData()
-    
-  buildMainDataSet()
-    
+  master <<- buildMasterData()
+  
 }
 
 message("analyzing data (downloading if necessary)...")
