@@ -156,7 +156,9 @@ init <- function() {
   message("building masterData...")
   masterData <<- buildMasterData()
   message("building summaryData...")
-  summaryData <<- buildSummaryData(masterData)  
+  summaryData <<- buildSummaryData(masterData)
+  message("saving summardData in the file summaryData.rtbl...")
+  write.table(summaryData, file="summaryData.rtbl", row.name=FALSE)
 }
 
 message("analyzing data (downloading if necessary)...")

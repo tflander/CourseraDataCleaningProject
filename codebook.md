@@ -1,3 +1,13 @@
+#Code Book for the "Getting and Cleaning Data Class" Project
+##The Human Activity Recognition Using Smartphones Data Set 
+
+  The code book
+    - describe columns in the tidy data set (including units, e.q. dollars in ones or thousands)
+    - information about the summary choices (e.g. median vs mean)
+    - information about the experimental study design (e.g. experiment vs data extraction)
+       - "Study Design" section that details how the data was collected
+       - include data that was excluded
+
 #TA DICTIONARY - 2006 HOUSING
 ##RT 1 
  Record Type
