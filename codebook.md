@@ -10,143 +10,143 @@
 
 
 
-#DATA DICTIONARY
+##DATA DICTIONARY
 
-##activityName
+###activityName
  of  using 
-##subjectId
+###subjectId
  of  using 
-##activityId
+###activityId
  of  using 
-##tBodyAcc-mean()-X
+###tBodyAcc-mean()-X
 Mean of BodyAcc-X using time domain signals
-##tBodyAcc-mean()-Y
+###tBodyAcc-mean()-Y
 Mean of BodyAcc-Y using time domain signals
-##tBodyAcc-mean()-Z
+###tBodyAcc-mean()-Z
 Mean of BodyAcc-Z using time domain signals
-##tGravityAcc-mean()-X
+###tGravityAcc-mean()-X
 Mean of GravityAcc-X using time domain signals
-##tGravityAcc-mean()-Y
+###tGravityAcc-mean()-Y
 Mean of GravityAcc-Y using time domain signals
-##tGravityAcc-mean()-Z
+###tGravityAcc-mean()-Z
 Mean of GravityAcc-Z using time domain signals
-##tBodyAccJerk-mean()-X
+###tBodyAccJerk-mean()-X
 Mean of BodyAccJerk-X using time domain signals
-##tBodyAccJerk-mean()-Y
+###tBodyAccJerk-mean()-Y
 Mean of BodyAccJerk-Y using time domain signals
-##tBodyAccJerk-mean()-Z
+###tBodyAccJerk-mean()-Z
 Mean of BodyAccJerk-Z using time domain signals
-##tBodyGyro-mean()-X
+###tBodyGyro-mean()-X
 Mean of BodyGyro-X using time domain signals
-##tBodyGyro-mean()-Y
+###tBodyGyro-mean()-Y
 Mean of BodyGyro-Y using time domain signals
-##tBodyGyro-mean()-Z
+###tBodyGyro-mean()-Z
 Mean of BodyGyro-Z using time domain signals
-##tBodyGyroJerk-mean()-X
+###tBodyGyroJerk-mean()-X
 Mean of BodyGyroJerk-X using time domain signals
-##tBodyGyroJerk-mean()-Y
+###tBodyGyroJerk-mean()-Y
 Mean of BodyGyroJerk-Y using time domain signals
-##tBodyGyroJerk-mean()-Z
+###tBodyGyroJerk-mean()-Z
 Mean of BodyGyroJerk-Z using time domain signals
-##tBodyAccMag-mean()
+###tBodyAccMag-mean()
 Mean of BodyAccMag using time domain signals
-##tGravityAccMag-mean()
+###tGravityAccMag-mean()
 Mean of GravityAccMag using time domain signals
-##tBodyAccJerkMag-mean()
+###tBodyAccJerkMag-mean()
 Mean of BodyAccJerkMag using time domain signals
-##tBodyGyroMag-mean()
+###tBodyGyroMag-mean()
 Mean of BodyGyroMag using time domain signals
-##tBodyGyroJerkMag-mean()
+###tBodyGyroJerkMag-mean()
 Mean of BodyGyroJerkMag using time domain signals
-##fBodyAcc-mean()-X
+###fBodyAcc-mean()-X
 Mean of BodyAcc-X using frequency domain signals
-##fBodyAcc-mean()-Y
+###fBodyAcc-mean()-Y
 Mean of BodyAcc-Y using frequency domain signals
-##fBodyAcc-mean()-Z
+###fBodyAcc-mean()-Z
 Mean of BodyAcc-Z using frequency domain signals
-##fBodyAccJerk-mean()-X
+###fBodyAccJerk-mean()-X
 Mean of BodyAccJerk-X using frequency domain signals
-##fBodyAccJerk-mean()-Y
+###fBodyAccJerk-mean()-Y
 Mean of BodyAccJerk-Y using frequency domain signals
-##fBodyAccJerk-mean()-Z
+###fBodyAccJerk-mean()-Z
 Mean of BodyAccJerk-Z using frequency domain signals
-##fBodyGyro-mean()-X
+###fBodyGyro-mean()-X
 Mean of BodyGyro-X using frequency domain signals
-##fBodyGyro-mean()-Y
+###fBodyGyro-mean()-Y
 Mean of BodyGyro-Y using frequency domain signals
-##fBodyGyro-mean()-Z
+###fBodyGyro-mean()-Z
 Mean of BodyGyro-Z using frequency domain signals
-##fBodyAccMag-mean()
+###fBodyAccMag-mean()
 Mean of BodyAccMag using frequency domain signals
-##fBodyBodyAccJerkMag-mean()
+###fBodyBodyAccJerkMag-mean()
 Mean of BodyBodyAccJerkMag using frequency domain signals
-##fBodyBodyGyroMag-mean()
+###fBodyBodyGyroMag-mean()
 Mean of BodyBodyGyroMag using frequency domain signals
-##fBodyBodyGyroJerkMag-mean()
+###fBodyBodyGyroJerkMag-mean()
 Mean of BodyBodyGyroJerkMag using frequency domain signals
-##tBodyAcc-std()-X
+###tBodyAcc-std()-X
 Standard deviation of BodyAcc-X using time domain signals
-##tBodyAcc-std()-Y
+###tBodyAcc-std()-Y
 Standard deviation of BodyAcc-Y using time domain signals
-##tBodyAcc-std()-Z
+###tBodyAcc-std()-Z
 Standard deviation of BodyAcc-Z using time domain signals
-##tGravityAcc-std()-X
+###tGravityAcc-std()-X
 Standard deviation of GravityAcc-X using time domain signals
-##tGravityAcc-std()-Y
+###tGravityAcc-std()-Y
 Standard deviation of GravityAcc-Y using time domain signals
-##tGravityAcc-std()-Z
+###tGravityAcc-std()-Z
 Standard deviation of GravityAcc-Z using time domain signals
-##tBodyAccJerk-std()-X
+###tBodyAccJerk-std()-X
 Standard deviation of BodyAccJerk-X using time domain signals
-##tBodyAccJerk-std()-Y
+###tBodyAccJerk-std()-Y
 Standard deviation of BodyAccJerk-Y using time domain signals
-##tBodyAccJerk-std()-Z
+###tBodyAccJerk-std()-Z
 Standard deviation of BodyAccJerk-Z using time domain signals
-##tBodyGyro-std()-X
+###tBodyGyro-std()-X
 Standard deviation of BodyGyro-X using time domain signals
-##tBodyGyro-std()-Y
+###tBodyGyro-std()-Y
 Standard deviation of BodyGyro-Y using time domain signals
-##tBodyGyro-std()-Z
+###tBodyGyro-std()-Z
 Standard deviation of BodyGyro-Z using time domain signals
-##tBodyGyroJerk-std()-X
+###tBodyGyroJerk-std()-X
 Standard deviation of BodyGyroJerk-X using time domain signals
-##tBodyGyroJerk-std()-Y
+###tBodyGyroJerk-std()-Y
 Standard deviation of BodyGyroJerk-Y using time domain signals
-##tBodyGyroJerk-std()-Z
+###tBodyGyroJerk-std()-Z
 Standard deviation of BodyGyroJerk-Z using time domain signals
-##tBodyAccMag-std()
+###tBodyAccMag-std()
 Standard deviation of BodyAccMag using time domain signals
-##tGravityAccMag-std()
+###tGravityAccMag-std()
 Standard deviation of GravityAccMag using time domain signals
-##tBodyAccJerkMag-std()
+###tBodyAccJerkMag-std()
 Standard deviation of BodyAccJerkMag using time domain signals
-##tBodyGyroMag-std()
+###tBodyGyroMag-std()
 Standard deviation of BodyGyroMag using time domain signals
-##tBodyGyroJerkMag-std()
+###tBodyGyroJerkMag-std()
 Standard deviation of BodyGyroJerkMag using time domain signals
-##fBodyAcc-std()-X
+###fBodyAcc-std()-X
 Standard deviation of BodyAcc-X using frequency domain signals
-##fBodyAcc-std()-Y
+###fBodyAcc-std()-Y
 Standard deviation of BodyAcc-Y using frequency domain signals
-##fBodyAcc-std()-Z
+###fBodyAcc-std()-Z
 Standard deviation of BodyAcc-Z using frequency domain signals
-##fBodyAccJerk-std()-X
+###fBodyAccJerk-std()-X
 Standard deviation of BodyAccJerk-X using frequency domain signals
-##fBodyAccJerk-std()-Y
+###fBodyAccJerk-std()-Y
 Standard deviation of BodyAccJerk-Y using frequency domain signals
-##fBodyAccJerk-std()-Z
+###fBodyAccJerk-std()-Z
 Standard deviation of BodyAccJerk-Z using frequency domain signals
-##fBodyGyro-std()-X
+###fBodyGyro-std()-X
 Standard deviation of BodyGyro-X using frequency domain signals
-##fBodyGyro-std()-Y
+###fBodyGyro-std()-Y
 Standard deviation of BodyGyro-Y using frequency domain signals
-##fBodyGyro-std()-Z
+###fBodyGyro-std()-Z
 Standard deviation of BodyGyro-Z using frequency domain signals
-##fBodyAccMag-std()
+###fBodyAccMag-std()
 Standard deviation of BodyAccMag using frequency domain signals
-##fBodyBodyAccJerkMag-std()
+###fBodyBodyAccJerkMag-std()
 Standard deviation of BodyBodyAccJerkMag using frequency domain signals
-##fBodyBodyGyroMag-std()
+###fBodyBodyGyroMag-std()
 Standard deviation of BodyBodyGyroMag using frequency domain signals
-##fBodyBodyGyroJerkMag-std()
+###fBodyBodyGyroJerkMag-std()
 Standard deviation of BodyBodyGyroJerkMag using frequency domain signals
