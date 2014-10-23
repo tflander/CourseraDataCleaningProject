@@ -1,14 +1,13 @@
 #Code Book for the "Getting and Cleaning Data Class" Project
 ##The Human Activity Recognition Using Smartphones Data Set 
 
-  The code book
-    - describe columns in the tidy data set (including units, e.q. dollars in ones or thousands)
-    - information about the summary choices (e.g. median vs mean)
-    - information about the experimental study design (e.g. experiment vs data extraction)
-       - "Study Design" section that details how the data was collected
-       - include data that was excluded
+## Study Design
 
+The data collected in this study was downloaded from [The Human Activity Recognition Using Smartphones Data Set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  For your convenience, the data is included with the rest of the project [here](https://github.com/tflander/CourseraDataCleaningProject/blob/master/Dataset.zip).
 
+The original data set includes files that were not used to create the summary data set for this project.  These unused files are found in the "Inertia Signals" folders in the zip file's "train" and "test" folders.  You could use the data in these folders to reconstruct the input data for this project.
+
+The input data measurements for this project is found in the files "X\_train.txt" and "X\_test.txt".  Other files are used to give context to the measurements for subject being studied, the activity being performed, and the measurements being summarized.  For more information on the study design, see the [R script](https://github.com/tflander/CourseraDataCleaningProject/blob/master/run_analysis.R) used to create the [summary data](https://github.com/tflander/CourseraDataCleaningProject/blob/master/summaryData.rtbl.txt) resulting from this project.
 
 ##DATA DICTIONARY
 
