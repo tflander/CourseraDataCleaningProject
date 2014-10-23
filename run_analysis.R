@@ -31,7 +31,7 @@ init <- function() {
     paste(x, collapse = '')
   }
     
-  # return the subjects for the experiment, since 
+  # return the subjects for the experiment (one subject per row in the experiment data).
   buildSubjects <- function() {
     
     # Function to load an individual subject file.
@@ -58,8 +58,6 @@ init <- function() {
   #        The activity names come from the file activity_labels.txt.
   #    4) Appropriately labels the data set with descriptive variable names. 
   #        The data set data columns come from the file features.txt.
-  #
-  #    Refer to the code book for detailed information
   buildMasterData <- function() {
         
     # function to load the activity labels for the train and test data set.
@@ -141,6 +139,9 @@ init <- function() {
   # This message satisfies requirement #5
   #    From the data set in step 4, creates a second, independent tidy data 
   #    set with the average of each variable for each activity and each subject.
+  #
+  #    Refer to the code book for detailed information on the column definitions
+  #    for this data set.
   buildSummaryData <- function(sourceData) {
     suppressPackageStartupMessages(library(dplyr))
     a <- group_by(sourceData, activityId, activityName, subjectId)
