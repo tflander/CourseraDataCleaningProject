@@ -9,6 +9,8 @@ The original data set includes files that were not used to create the summary da
 
 The input data measurements for this project is found in the files "X\_train.txt" and "X\_test.txt".  Other files are used to give context to the measurements for subject being studied, the activity being performed, and the measurements being summarized.  For more information on the study design, see the [R script](https://github.com/tflander/CourseraDataCleaningProject/blob/master/run_analysis.R) used to create the [summary data](https://github.com/tflander/CourseraDataCleaningProject/blob/master/summaryData.rtbl.txt) resulting from this project.
 
+Note:  I could have created a "tall table" where each row represented a smartphone function, with colunms for mean, standard deviation, subject, function name, activity name & id, and the method used for creating the summary (frequency domain signal or time domain signal).  It made more sense, however, to summarize this data as a wide table.  I presumed the next logical step in the data pipeline is to determine column-by-column if the measurement is useful for identifying the activity.  Rather than having the researcher melt the data into a wide table, I choose to submit the data already summarized in wide format.
+
 ##DATA DICTIONARY
 
 ###activityName
