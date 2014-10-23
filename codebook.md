@@ -3,7 +3,7 @@
 
 ## Study Design
 
-The data collected in this study was downloaded from [The Human Activity Recognition Using Smartphones Data Set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  For your convenience, the data is included with the rest of the project [here](https://github.com/tflander/CourseraDataCleaningProject/blob/master/Dataset.zip).
+The data collected in this study was downloaded from [The Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  You can download the data from the Center for Machine Learning and Intelligent Systems [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), or download the data from this project [here](https://github.com/tflander/CourseraDataCleaningProject/blob/master/Dataset.zip).
 
 The original data set includes files that were not used to create the summary data set for this project.  These unused files are found in the "Inertia Signals" folders in the zip file's "train" and "test" folders.  You could use the data in these folders to reconstruct the input data for this project.
 
