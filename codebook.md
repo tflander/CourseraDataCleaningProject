@@ -24,6 +24,7 @@
 - 4 SITTING
 - 5 STANDING
 - 6 LAYING
+
 ###tBodyAcc-mean()-X
 Mean of BodyAcc-X using time domain signals
 ###tBodyAcc-mean()-Y
