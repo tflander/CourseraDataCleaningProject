@@ -13,11 +13,17 @@
 ##DATA DICTIONARY
 
 ###activityName
- of  using 
+ The activity name.  One of:  LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
 ###subjectId
- of  using 
+ Ordinal number from 1 - 30 representing the person being studied.
 ###activityId
- of  using 
+ Ordinal number from 1 - 6 representing the activity:
+- 1 WALKING
+- 2 WALKING_UPSTAIRS
+- 3 WALKING_DOWNSTAIRS
+- 4 SITTING
+- 5 STANDING
+- 6 LAYING
 ###tBodyAcc-mean()-X
 Mean of BodyAcc-X using time domain signals
 ###tBodyAcc-mean()-Y
