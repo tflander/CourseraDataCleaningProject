@@ -25,6 +25,9 @@
 - 5 STANDING
 - 6 LAYING
 
+ ```
+ Note:  The following measurements are numeric values with 5 decimal places, ranging from -1 to 1:
+ ```
 ###tBodyAcc-mean()-X
 Mean of BodyAcc-X using time domain signals
 ###tBodyAcc-mean()-Y
